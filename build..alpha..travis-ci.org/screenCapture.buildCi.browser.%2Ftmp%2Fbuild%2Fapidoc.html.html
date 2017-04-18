@@ -56,6 +56,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.ddp.ddp">
+            function <span class="apidocSignatureSpan"></span>ddp
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.ddp.super_">
             function <span class="apidocSignatureSpan">ddp.</span>super_
             <span class="apidocSignatureSpan">()</span>
@@ -75,6 +84,62 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.ddp" id="apidoc.module.ddp">module ddp</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ddp.ddp" id="apidoc.element.ddp.ddp">
+        function <span class="apidocSignatureSpan"></span>ddp
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ddp = function (opts) {
+  var self = this;
+
+  opts = opts || {};
+
+  // backwards compatibility
+  if ("use_ssl" in opts)              { opts.ssl = opts.use_ssl; }
+  if ("auto_reconnect" in opts)       { opts.autoReconnect = opts.auto_reconnect; }
+  if ("auto_reconnect_timer" in opts) { opts.autoReconnectTimer = opts.auto_reconnect_timer; }
+  if ("maintain_collections" in opts) { opts.maintainCollections = opts.maintain_collections; }
+  if ("ddp_version" in opts)          { opts.ddpVersion = opts.ddp_version; }
+
+  // default arguments
+  self.host = opts.host || "localhost";
+  self.port = opts.port || 3000;
+  self.path = opts.path;
+  self.ssl  = opts.ssl  || self.port === 443;
+  self.tlsOpts = opts.tlsOpts || {};
+  self.useSockJs = opts.useSockJs || false;
+  self.autoReconnect = ("autoReconnect" in opts) ? opts.autoReconnect : true;
+  self.autoReconnectTimer = ("autoReconnectTimer" in opts) ? opts.autoReconnectTimer : 500;
+  self.maintainCollections = ("maintainCollections" in opts) ? opts.maintainCollections : true;
+  self.url  = opts.url;
+  // support multiple ddp versions
+  self.ddpVersion = ("ddpVersion" in opts) ? opts.ddpVersion : "1";
+  self.supportedDdpVersions = ["1", "pre2", "pre1"];
+
+  // Expose EJSON object, so client can use EJSON.addType(...)
+  self.EJSON = EJSON;
+
+  // very very simple collections (name -&gt; [{id -&gt; document}])
+  if (self.maintainCollections) {
+    self.collections = {};
+  }
+
+  // internal stuff to track callbacks
+  self._isConnecting = false;
+  self._isReconnecting = false;
+  self._nextId = 0;
+  self._callbacks = {};
+  self._updatedCallbacks = {};
+  self._pendingMethods = {};
+  self._observers = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
