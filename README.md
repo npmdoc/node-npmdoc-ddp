@@ -1,9 +1,14 @@
-# api documentation for  [ddp (v0.12.1)](https://github.com/oortcloud/node-ddp-client#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ddp.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ddp) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ddp.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ddp)
+# npmdoc-ddp
+
+#### api documentation for  [ddp (v0.12.1)](https://github.com/oortcloud/node-ddp-client#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ddp.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ddp) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ddp.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ddp)
+
 #### Node.js module to connect to servers using DDP protocol.
 
-[![NPM](https://nodei.co/npm/ddp.png?downloads=true)](https://www.npmjs.com/package/ddp)
+[![NPM](https://nodei.co/npm/ddp.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ddp)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-ddp/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-ddp_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ddp/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-ddp/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-ddp/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-ddp/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ddp/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-ddp/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Tom Coleman",
-        "email": "tom@thesnail.org",
         "url": "http://tom.thesnail.org"
     },
     "bugs": {
@@ -27,33 +31,27 @@
     "contributors": [
         {
             "name": "Thomas Sarlandie",
-            "email": "thomas@sarlandie.net",
             "url": "http://www.sarfata.org"
         },
         {
-            "name": "Mason Gravitt",
-            "email": "emgee@gravitronic.com"
+            "name": "Mason Gravitt"
         },
         {
             "name": "Mike Bannister",
-            "email": "notimpossiblemike@gmail.com",
             "url": "http://po.ssibiliti.es"
         },
         {
             "name": "Chris Mather",
-            "email": "mather.chris@gmail.com",
             "url": "http://eventedmind.com"
         },
         {
             "name": "Tarang Patel"
         },
         {
-            "name": "Vaughn Iverson",
-            "email": "vsivsi@yahoo.com"
+            "name": "Vaughn Iverson"
         },
         {
-            "name": "Rony Kubat",
-            "email": "rony@kubat.org"
+            "name": "Rony Kubat"
         }
     ],
     "dependencies": {
@@ -87,33 +85,26 @@
     "main": "lib/ddp-client",
     "maintainers": [
         {
-            "name": "tmeasday",
-            "email": "tom@percolatestudio.com"
+            "name": "tmeasday"
         },
         {
-            "name": "possibilities",
-            "email": "mikebannister@gmail.com"
+            "name": "possibilities"
         },
         {
-            "name": "sarfata",
-            "email": "thomas@sarlandie.net"
+            "name": "sarfata"
         },
         {
-            "name": "emgee",
-            "email": "hello@gravitronic.com"
+            "name": "emgee"
         },
         {
-            "name": "tarang",
-            "email": "tarang.com@gmail.com"
+            "name": "tarang"
         },
         {
-            "name": "vsivsi",
-            "email": "vsivsi@yahoo.com"
+            "name": "vsivsi"
         }
     ],
     "name": "ddp",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/oortcloud/node-ddp-client.git"
@@ -123,30 +114,6 @@
     },
     "version": "0.12.1"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module ddp](#apidoc.module.ddp)
-1.  [function <span class="apidocSignatureSpan">ddp.</span>super_ ()](#apidoc.element.ddp.super_)
-1.  object <span class="apidocSignatureSpan">ddp.</span>ERRORS
-
-
-
-# <a name="apidoc.module.ddp"></a>[module ddp](#apidoc.module.ddp)
-
-#### <a name="apidoc.element.ddp.super_"></a>[function <span class="apidocSignatureSpan">ddp.</span>super_ ()](#apidoc.element.ddp.super_)
-- description and source-code
-```javascript
-function EventEmitter() {
-  EventEmitter.init.call(this);
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
