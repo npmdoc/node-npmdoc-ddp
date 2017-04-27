@@ -1,6 +1,6 @@
 # npmdoc-ddp
 
-#### api documentation for  [ddp (v0.12.1)](https://github.com/oortcloud/node-ddp-client#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ddp.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ddp) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ddp.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ddp)
+#### basic api documentation for  [ddp (v0.12.1)](https://github.com/oortcloud/node-ddp-client#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ddp.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ddp) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ddp.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ddp)
 
 #### Node.js module to connect to servers using DDP protocol.
 
@@ -112,7 +112,8 @@
     "scripts": {
         "test": "./node_modules/mocha/bin/mocha test"
     },
-    "version": "0.12.1"
+    "version": "0.12.1",
+    "bin": {}
 }
 ```
 
